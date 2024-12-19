@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  background-color: burlywood;
+  padding: 10px;
+  border: 6px solid darkred;
+  margin: 10px;
+  /* border-radius: 5px; */
+  /* padding: 16px 42px 16px 42px;
+  margin: 0 auto; */
+}
+
+/* ----------Only 3 and 4--------- */
+
+/* .box:nth-child(3),
+.box:nth-child(4) {
+  background-color: gold;
+} */
+
+/* ----------Всі і тільки не перший----------- */
+
+/* .box:not(:first-child) {
+  background-color: darkorchid;
+} */
+
+/* ----------Всі окрім останнього---------- */
+
+/* .box:last-child {
+  background-color: green;
+} */
+
+/* -------Кожен непарний------------- */
+
+/* .box:nth-child(odd) {
+  background-color: fuchsia;
+} */
+
+/* ---------Кожен парний------------ */
+
+/* .box:nth-child(even) {
+  background-color: fuchsia;
+} */
+
+/*  замість n у нас 0 */
+
+/* .box:nth-child(n + 3) {
+  background-color: gold;
+} */
+
+/*  Виходить 2*0 = 0 + 3 = 3 */
+/*  Виходить 2*1 = 2 + 3 = 5 */
+/* .box:nth-child(2n + 3) {
+  background-color: gold;
+} */
