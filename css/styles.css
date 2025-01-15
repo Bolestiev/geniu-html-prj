@@ -519,7 +519,7 @@ section {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 0;
-  transition: opacity 3s, visibility 3s;
+  transition: opacity 1s, visibility 1s;
 }
 
 .backdrop.is-hidden {
@@ -534,12 +534,64 @@ section {
   max-width: 880px;
   height: 100%;
   max-height: 880px;
+  padding: 128px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/* -----------Form---------------- */
+
+.form-field {
+  margin-bottom: 32px;
+}
+
+.input-modal {
+  font-size: 16px;
+  line-height: 1.17;
+  padding: 16px 42px;
+  width: 100%;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.input-modal:focus {
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+
+.input-modal:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.input-modal::placeholder .label-modal {
+  display: block;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-button {
+  margin: 0 auto 24px;
+  display: block;
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-terms-link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
 }
